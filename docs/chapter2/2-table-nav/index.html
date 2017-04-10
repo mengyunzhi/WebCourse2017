@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>第二节：导航模块</title>
+    <meta name="description" content="使用表格标签table，以及行、列标签来实现导航"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/WebCourse2017/assets/css/style.css?v=">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">商业网站开发入门上机指导</h1>
+      <h2 class="project-tagline">技术支持：河北工业大学梦云智软件开发团队
+</h2>
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017/archive/master.zip" class="btn">Download .zip</a>
+      
+    </section>
+
+    <section class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">第二节：导航模块</h1>
+    <p class="post-meta"><time datetime="2017-04-10T14:30:02+08:00" itemprop="datePublished">Apr 10, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">作者</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>本节中，我们将开发导航模块：
+<img src="/WebCourse2017/assets/image/chapter2/5.png" alt="/WebCourse2017/assets/image/chapter2/5.png" /></p>
+
+<h1 id="table">table</h1>
+<p><code class="highlighter-rouge">table</code>–表格。
+按上图所示，我们需要开发一个1行5列的表格，用以显示个人介绍网页中的导航。</p>
+
+<h3 id="新建表格">新建表格</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+<p>刷新网页，我们发现，好像什么也没有发生。是的，我们只是建立了一个空表格，表格中并没有内容。</p>
+
+<h3 id="新建行">新建行</h3>
+<p>有了表格，我们在表格中，新建一行。</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">tr</code> = <code class="highlighter-rouge">table row</code></p>
+
+<p>刷新网页，由于没有数据，所以还是什么都没有发生。</p>
+
+<h3 id="新建列">新建列</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+<p><code class="highlighter-rouge">td</code> = <code class="highlighter-rouge">table data</code>, 这也间接告诉我们，所有的数据都应该写在<code class="highlighter-rouge">td</code>中。
+刷新网页，由于没有数据，所以还是什么都没有发生。</p>
+
+<h3 id="加入数据">加入数据</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+<p><img src="/WebCourse2017/assets/image/chapter2/6.png" alt="/WebCourse2017/assets/image/chapter2/6.png" /></p>
+
+<p>我们再刷新网页，发现一个没有边框的1行5列的表格已经出现了。没错，在<code class="highlighter-rouge">html</code>中，表格默认是没有边框的。而加边框操作，较为复杂，我们将其放到后面进行讲解。</p>
+
+<p>至此，一个没有边框的导航模块的雏形已经成功建立了。</p>
+
+<h3 id="规范缩进">规范缩进</h3>
+<p>上述代码的编写过程中，我们非常注意代码的正确缩进。所以最终我们看到的是如下的效果：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/7.png" alt="/WebCourse2017/assets/image/chapter2/7.png" /></p>
+
+<p>这使得我们能够快速的判断出我们的代码属于哪个代码块，代码与代码间的关系又是什么。做牛气的软件工程师，从规范代码做起！</p>
+
+<h2 id="总结">总结：</h2>
+<p>本节中，我们学习了三个新的标签，它们是:<code class="highlighter-rouge">table</code>表格标签,<code class="highlighter-rouge">tr(tabel row)</code>表格中的行标签，<code class="highlighter-rouge">td (table data)</code>行中的列（数据）标签。是的，你猜的没错，基本的<code class="highlighter-rouge">html</code>的学习，就是标签的学习，而标签的学习，是一个纯的记忆的过程。其实我们大可不必去刻意的记忆这些标签，我们只要做到当我们需要使用表格的时候，能够知道应该去搜索“html 表格”，就已经达到了学习的目的。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/8.png" alt="/WebCourse2017/assets/image/chapter2/8.png" /></p>
+
+
+  </div>
+
+  
+</article>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages </a> and <a href="http://jekyllrb.com/">Jekyll</a>. Powered By: <a href="http://www.mengyunzhi.com">梦云智</a>. </span>
+      </footer>
+    </section>
+
+  </body>
+</html>

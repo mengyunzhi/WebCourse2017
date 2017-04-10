@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>第二节：基本信息模块</title>
+    <meta name="description" content="使用image图片标签, p标签以及a标签来实现基本信息的介绍"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/WebCourse2017/assets/css/style.css?v=">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">商业网站开发入门上机指导</h1>
+      <h2 class="project-tagline">技术支持：河北工业大学梦云智软件开发团队
+</h2>
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017/archive/master.zip" class="btn">Download .zip</a>
+      
+    </section>
+
+    <section class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">第二节：基本信息模块</h1>
+    <p class="post-meta"><time datetime="2017-04-10T15:37:53+08:00" itemprop="datePublished">Apr 10, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">作者</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>本节中，我们来开发基本信息模块：
+<img src="/WebCourse2017/assets/image/chapter2/9.png" alt="/WebCourse2017/assets/image/chapter2/9.png" /></p>
+
+<h2 id="生活照">生活照</h2>
+<p>找一张身活照，然后想办法复制到我们实验室的电脑上，并放置到与<code class="highlighter-rouge">index.html</code>位置相同的位置上。比如，我找到了一张，起个名字叫：<code class="highlighter-rouge">duolaiameng.png</code>（文件名.扩展名）。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/11.png" alt="/WebCourse2017/assets/image/chapter2/11.png" /></p>
+
+<h2 id="插入图片">插入图片</h2>
+<p>插入图片，我们使用的是<code class="highlighter-rouge">img</code>图片(image)标签。</p>
+
+<p>插入图片标签<code class="highlighter-rouge">img</code>后，我们还要告诉这个标签：要插入的图片在哪。这样操作是通过设置<code class="highlighter-rouge">img</code>标签的<code class="highlighter-rouge">src</code>属性来完成的。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<p><strong>[注意]</strong> 在本节中，我们只展示<code class="highlighter-rouge">body</code>中的内容。这表示：<code class="highlighter-rouge">body</code>标签外的代码不变。所以上述代码，相当于：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>刷新页面：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/12.png" alt="/WebCourse2017/assets/image/chapter2/12.png" />
+是的，图片标签不需要界定结束位置，是一个自闭合标签。在编写代码时，我们更愿意在自闭合标签的最右侧形成一个<code class="highlighter-rouge"> /&gt;</code>（比如前面的：<code class="highlighter-rouge">&lt;img src="duolaiameng.png" /&gt;</code>）来表明：这就是一个自闭合标签！</p>
+
+<p><code class="highlighter-rouge">src(source)</code>）是指引用的图片的位置，我们只所以常常把网络中存在图片，叫做图片资源，也正是由于<code class="highlighter-rouge">src</code>是<code class="highlighter-rouge">source</code>的缩写的原因。</p>
+
+<h2 id="增加介绍">增加介绍</h2>
+<p>我们使用一个段落标签<code class="highlighter-rouge">p</code>来增加介绍信息。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>梦云智软件开发团队. 2014.12.20. 3792535@qq.com<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<p>如果用户安装了收发邮箱的客户端，比如说”foxmail”，我们更希望能够给用户提供这样的便利，即：点击邮箱地址直接给我们发送邮箱。<code class="highlighter-rouge">html</code>是通过<code class="highlighter-rouge">a</code>标签来做到这点的。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p&gt;&lt;a href="mailto:3792535@qq.com"&gt;3792535@qq.com&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+</div>
+<p><code class="highlighter-rouge">a</code> = <code class="highlighter-rouge">anchor</code>，译为<code class="highlighter-rouge">锚</code>的意思。在网页中，大多用于页面间以及页面内跳转。由于锚的存在，使得我们可以在网页间跳来跳去，而不必去关心每个网的地址都是什么。这也像我们在大海中发现了宝贝，怕下次找不到咱，而在宝贝的位置上下了一个锚；这也像我们打游戏中的传送门，我们点击了传送门，就会自动的被传送到门的另一侧。</p>
+
+<p><code class="highlighter-rouge">a</code>标签具有一个<code class="highlighter-rouge">href</code>属性，全称为：<code class="highlighter-rouge">Hypertext Reference</code>,其中<code class="highlighter-rouge">Hypertext</code>即，我们<code class="highlighter-rouge">html</code>中的第一个<code class="highlighter-rouge">ht</code>,译为超文本。所以我们的<code class="highlighter-rouge">html</code>又叫做<code class="highlighter-rouge">超文本(Hypertext)标记(Markup)语言(Language)</code>，而<code class="highlighter-rouge">href</code>又叫做<code class="highlighter-rouge">超文本引用</code>。是的,<code class="highlighter-rouge">href</code>拥有着和<code class="highlighter-rouge">html</code>缩写相同的单词，可见其在<code class="highlighter-rouge">html</code>语言中的重要性。</p>
+
+<p><code class="highlighter-rouge">href</code>除了可以进行页面间，页面内的跳转外，如上面我们使用的，还可以用于触发邮件发送的客户端，从而进行邮件的发送。点我们如上设置好后，点击我们的邮箱地址，不出意外的，操作系统将自动为我们启用一个发送邮件的客户端。比如:<code class="highlighter-rouge">outlook</code></p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/13.png" alt="/WebCourse2017/assets/image/chapter2/13.png" /></p>
+
+<h2 id="美化感受">美化感受</h2>
+<p>随着模块的增多，用户会越来越眼花缭乱。为此，我们使用一个原始，但却有效的方案来解决这个问题 – 水平分隔线(horizontal rule) – <code class="highlighter-rouge">&lt;hr /&gt;</code></p>
+
+<p>在基本信息模块的前面和后面，各增加一条，以达到视觉的隔离效果。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>梦云智软件开发团队. 2014.12.20. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:3792535@qq.com"</span><span class="nt">&gt;</span>3792535@qq.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/14.png" alt="/WebCourse2017/assets/image/chapter2/14.png" /></p>
+
+<p>我们在照顾用户的浏览感受的同时，也照顾一下我们自己的感受。随着代码的增加，我们越来越多期望能够快速的读懂自己的代码了。这需要靠适度的空行及注释完帮助我们。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="c">&lt;!-- 导航 --&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 导航 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 基本信息 --&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>梦云智软件开发团队. 2014.12.20. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:3792535@qq.com"</span><span class="nt">&gt;</span>3792535@qq.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 基本信息 结束 --&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<p>刷新网页，发现没有发生任务的变化。是的，注释的作用只是帮助工程师来更好的理解代码。除此以外，并不会产生其它的作用。</p>
+
+<p>正如你看到的，在<code class="highlighter-rouge">html</code>中，我们使用<code class="highlighter-rouge">&lt;!--</code>做为注释的开始，使用<code class="highlighter-rouge">--&gt;</code>做为注释的结束。同时，聪明的<code class="highlighter-rouge">sublime</code>也会用颜色来告诉你哪些是注释，哪些是代码。</p>
+
+<p>最终完整代码如下：</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="c">&lt;!-- 导航 --&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 导航 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 基本信息 --&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>梦云智软件开发团队. 2014.12.20. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:3792535@qq.com"</span><span class="nt">&gt;</span>3792535@qq.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 基本信息 结束 --&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="总结">总结：</h2>
+<p>在本节中，我们学习使用了图片标签<code class="highlighter-rouge">img</code>, 并使用<code class="highlighter-rouge">img</code>标签的<code class="highlighter-rouge">src</code>属性来说明了图片的位置；锚点标签<code class="highlighter-rouge">a</code>，并使用<code class="highlighter-rouge">href</code>属性来说明了超文本链接引用的位置，最后在<code class="highlighter-rouge">href</code>中使用<code class="highlighter-rouge">mailto:</code>来达到了启用邮件客户端发送邮件的目的。紧接着，我们使用<code class="highlighter-rouge">hr</code>标签来产生了两条水平分隔性，使用<code class="highlighter-rouge">&lt;!-- --&gt;</code>标签为软件工程师们增加了注释。</p>
+
+<p>是的，就是这<code class="highlighter-rouge">html</code>,就是<code class="highlighter-rouge">MarkUp</code>(标记 标签)，就是 超文本标记语言 – <code class="highlighter-rouge">html</code>。</p>
+
+
+  </div>
+
+  
+</article>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages </a> and <a href="http://jekyllrb.com/">Jekyll</a>. Powered By: <a href="http://www.mengyunzhi.com">梦云智</a>. </span>
+      </footer>
+    </section>
+
+  </body>
+</html>
