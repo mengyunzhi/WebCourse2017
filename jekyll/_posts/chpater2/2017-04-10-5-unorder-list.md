@@ -67,7 +67,7 @@ author: "河北工业大学"
 ![{{site.imageurl}}/chapter2/19.png]({{site.imageurl}}/chapter2/19.png)
 
 ## 增加无序列表
-无序列表 = `unordered list` = `ul`
+在上节中，我们使用的是有序列表`ordered list` => `ol`, 本节中，我们将有序列表`ol`，更换为 无序列表 => `unordered list` => `ul`
 
 {% highlight html %}
     <!-- 我的建议 -->
@@ -107,12 +107,6 @@ author: "河北工业大学"
 ![{{site.imageurl}}/chapter2/21.png]({{site.imageurl}}/chapter2/21.png)
 
 # 总结：
-本节中，我们只学习了一个标签`ul (unordered list)`无序列表。如果在实验过程中，你感觉吃力的话，那么只能说明我们重复的还不够多。其实大多数的时候，并不是由于我们聪明所以才学的好；而是由于我们学的好而聪明。想看到那个更好聪明的你吗？很简单，重复做几次。是的，没错，就这么简单。  
+本节中，我们学习了标签`ul (unordered list)` -- 无序列表，并使用其开发了“我的建议”模块。
 
-> 简单的事情重复做，你就是专家。
-
-
-
-
-
-
+> 参考：| [http://www.runoob.com/tags/tag-ul.html](http://www.runoob.com/tags/tag-ul.html) 

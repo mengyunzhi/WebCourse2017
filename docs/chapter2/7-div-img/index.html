@@ -30,7 +30,225 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    
+    <p>本节上，让我们共同完成“照片墙”模块，即“生活中的我”模块。照片墙我们也不陌生，比如说百度的图片搜索，最终便是以照片墙的形式展现给我们的。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/35.png" alt="/WebCourse2017/assets/image/chapter2/35.png" /></p>
+
+<p>我们看到，第一张图片就像一块砖一样，最终形成了照片墙。</p>
+
+<p>我们也要做照片墙，和百度给我们的稍有不同，百度的照片墙，是一行一行的提供给我们的。比如，我们红色框出第一行，用绿色框出第三行。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/37.png" alt="/WebCourse2017/assets/image/chapter2/37.png" /></p>
+
+<p>而我们的个人简历，是一列一列提供给我们的。</p>
+
+<p>比如我们红色圈出第一列，用绿色圈出第二列。
+<img src="/WebCourse2017/assets/image/chapter2/38.png" alt="/WebCourse2017/assets/image/chapter2/38.png" /></p>
+
+<p>当然，无论是行为主，还是列为主，我们都可以使用我们前面学过的表格的方式来成功的开发出照片墙。</p>
+
+<h2 id="初始化">初始化</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<h2 id="准备素材">准备素材</h2>
+<p>我准备了3个图片素材：400px(像素) * 280px(像素)一张，400px * 140px 两张。
+如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/32.png" alt="/WebCourse2017/assets/image/chapter2/32.png" /></p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/33.png" alt="/WebCourse2017/assets/image/chapter2/33.png" /></p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/34.png" alt="/WebCourse2017/assets/image/chapter2/34.png" /></p>
+
+<p>并把上述三张图片，放至到<code class="highlighter-rouge">index.html</code>所在路径。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/41.png" alt="/WebCourse2017/assets/image/chapter2/41.png" /></p>
+
+<h2 id="制作表格">制作表格</h2>
+<p>在制作照片墙的过程中，我们遵循的原则是：由大到小，先行后列。</p>
+
+<p>按上述原则，我们对照片墙进行第一步分解，即开发一个1行2列的表格。如下图:</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/39.png" alt="/WebCourse2017/assets/image/chapter2/39.png" /></p>
+
+<p>代码如下：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>第一行第一列<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>第一行第二列<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/40.png" alt="/WebCourse2017/assets/image/chapter2/40.png" /></p>
+
+<h2 id="插入图片">插入图片</h2>
+<p>和在上节中为<code class="highlighter-rouge">a</code>标签加图片一样，我们直接将图片插入到表格数据单元<code class="highlighter-rouge">td</code>中。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>第一行第二列<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>效果如下:</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/42.png" alt="/WebCourse2017/assets/image/chapter2/42.png" /></p>
+
+<p>我们看到，表格中的第一列中加入了图片，第二中仍然是文字。</p>
+
+<h2 id="建立子表格">建立子表格</h2>
+<p>第二列中，我们需要将其转化为一个2行1列的表格。即:</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/43.png" alt="/WebCourse2017/assets/image/chapter2/43.png" /></p>
+
+<p>在<code class="highlighter-rouge">td</code>标签中，除了前面我们接触到的，可以加入文字、图片外，还可以加入其它的标签来实现更多的展示效果。比如，我们在这里在<code class="highlighter-rouge">td</code>中加入<code class="highlighter-rouge">table</code>标签。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;table&gt;&lt;/table&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>为了使代码更易读，我们对上述代码进行格式化。代码的格式化对代码进行换行，也多了一些空格，但没有关系，因为浏览器会自动的忽略这些换行与空格，以保证格式化后的效果与格式化前一模一样。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+                <span class="nt">&lt;table&gt;&lt;/table&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>然后，我们在子<code class="highlighter-rouge">table</code>标签中加入两个行标签<code class="highlighter-rouge">tr</code>, 实现2行。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+                <span class="nt">&lt;table&gt;</span>
+                    <span class="nt">&lt;tr&gt;&lt;/tr&gt;</span>
+                    <span class="nt">&lt;tr&gt;&lt;/tr&gt;</span>
+                <span class="nt">&lt;/table&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>在每一行中，都增加一列：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+                <span class="nt">&lt;table&gt;</span>
+                    <span class="nt">&lt;tr&gt;</span>
+                        <span class="nt">&lt;td&gt;</span>第一行，第一列<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;/tr&gt;</span>
+                    <span class="nt">&lt;tr&gt;</span>
+                        <span class="nt">&lt;td&gt;</span>第二行，第一列<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;/table&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>效果如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/44.png" alt="/WebCourse2017/assets/image/chapter2/44.png" /></p>
+
+<h3 id="插入图片-1">插入图片</h3>
+<p>和前面一样，我们将两个小图片分别插入到第一行，第一列与第二行，第一列的位置上。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 生活中的我 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>生活中的我<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*280.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+                <span class="nt">&lt;table&gt;</span>
+                    <span class="nt">&lt;tr&gt;</span>
+                        <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*140-1.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;/tr&gt;</span>
+                    <span class="nt">&lt;tr&gt;</span>
+                        <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">"400*140-2.png"</span> <span class="nt">/&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;/table&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 生活中的我 结束 --&gt;</span></code></pre></figure>
+
+<p>效果如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/45.png" alt="/WebCourse2017/assets/image/chapter2/45.png" /></p>
+
+<p>至此，一个小的照片墙开发便开发成功了。</p>
+
+<h1 id="总结">总结</h1>
+<p>我们使用了<code class="highlighter-rouge">table</code>标签中嵌套<code class="highlighter-rouge">table</code>标签的方法来实现了照片墙。在将照片墙转化为<code class="highlighter-rouge">table</code>时，我们遵循的原则是：由大到小，先行后列。<code class="highlighter-rouge">tabel</code>嵌套成功后，直接插入了<code class="highlighter-rouge">img</code>标签来实现了显示照片的目的。在实际的开发中，我们也会大量的使用标签嵌套的方法来实现更加复杂的效果。</p>
+
+<p>至此，一个简单的个人简历便开发完毕了。通过对本章的学习，我们不难发现。<code class="highlighter-rouge">html</code>在初级学习阶段，更多的是对标签的记忆和使用。我们需要了解到底有多少种标签，每种标签又能实现什么样的功能。其实不仅是<code class="highlighter-rouge">html</code>，其它语言的学习也是一样的，有一些约定的东西，需要我们进行一定的记忆。我们这里的记忆，并不是指当我们需要使用某一种标签时，能够默写出这个标签，能够熟悉这个标签每个属性的写法。而是，我们需要第一时间内确定<code class="highlighter-rouge">html</code>是否有实现这个功能的标签，确定这点后，我们需要进行搜索，来查看这个标签的用法及属性，最终借助搜索工具来实现的我们的开发。</p>
+
+<blockquote>
+  <p>简单的事情重复做，你就是专家!</p>
+</blockquote>
+
+<p>当我们重复的够多的时候，有一天你会突然发现，不经意间，我们竟然记住了所有常用的标签，而且对标签的属性也了如指掌。</p>
+
+<p>还等什么，赶快打开菜鸟教程，让我们从一个菜鸟开始，感受<code class="highlighter-rouge">html</code>的伟大魅力吧！</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>菜鸟教程：</td>
+        <td><a href="http://www.runoob.com/">http://www.runoob.com/</a></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>推荐图书：Head First HTML与CSS（第2版） [Head First HTML and CSS,Second Edition]</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/46.png" alt="/WebCourse2017/assets/image/chapter2/46.png" /></p>
+
+<hr />
+
+<h2 id="写在最后">写在最后：</h2>
+<p><code class="highlighter-rouge">html</code>可以认为是计算机工程中，最简单的语言。它是其它语言的基础, 如果我们有机会接触手机开发，你会发现在<code class="highlighter-rouge">ios</code>开发及<code class="highlighter-rouge">android</code>开发中，其视图的布局思想与<code class="highlighter-rouge">html</code>大同小异；如果我们有机会接触B/S架构下的应用程序开发，你会发现<code class="highlighter-rouge">html</code>是你所需要掌握的必备技能；如果我们有机会接触微信小程序开发，你也会在其布局中找到<code class="highlighter-rouge">html</code>的身影。何止如此？我们在C++的MFC中，VB，VF的视图中，不也可以看到一样的视图布局思想吗？</p>
+
 
   </div>
 

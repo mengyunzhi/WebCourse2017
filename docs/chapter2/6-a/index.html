@@ -30,7 +30,196 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    
+    <p>我们在前面的小节中，已经使用<code class="highlighter-rouge">a</code>锚点标签实现了自动启用系统邮件客户端的功能。在本节中，我们使用<code class="highlighter-rouge">a</code>标签来实现页面间的跳转。<code class="highlighter-rouge">a</code>标签可以说是最重要的标签，有了<code class="highlighter-rouge">a</code>标签，才有了我们的<code class="highlighter-rouge">超链接</code>，这使得我们从一个网页跳转至另一个网页成为了可能。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/22.png" alt="/WebCourse2017/assets/image/chapter2/22.png" /></p>
+
+<h2 id="初始化">初始化</h2>
+<p>和前面的章节一样，我们在进行开发前，进行一些初始化操作。这将使得我们的代码更易读，界面展示层次感更强。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span></code></pre></figure>
+
+<p>效果如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/23.png" alt="/WebCourse2017/assets/image/chapter2/23.png" /></p>
+
+<h2 id="加入链接">加入链接</h2>
+
+<ol>
+  <li>增加3个<code class="highlighter-rouge">a</code>标签：</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>河北工业大学<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>计算机科学与软件学院<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>梦云智软件开发团队<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span></code></pre></figure>
+
+<p>效果如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/24.png" alt="/WebCourse2017/assets/image/chapter2/24.png" /></p>
+
+<p>2.增加链接的值</p>
+
+<p>比如河北工业大学的网址为:<code class="highlighter-rouge">http://www.hebut.edu.cn</code>,计算机科学与软件学院网址为<code class="highlighter-rouge">http://www.scse.hebut.edu.cn</code>, 梦云智软件开发团队的网址为<code class="highlighter-rouge">http://www.mengyunzhi.com</code>。</p>
+
+<blockquote>
+  <p>是的，没错，我们需要有<code class="highlighter-rouge">http</code>的字样.</p>
+</blockquote>
+
+<p>大多数的网址都是<code class="highlighter-rouge">http</code>打头的，当浏览器看到<code class="highlighter-rouge">http</code>打头的网址时，会为我们自动省略<code class="highlighter-rouge">http</code>。但也有很多网址是<code class="highlighter-rouge">https</code>打头的，比如:<code class="highlighter-rouge">https://www.google.com</code>, <code class="highlighter-rouge">https://www.baidu.com</code>。而<code class="highlighter-rouge">http</code>和<code class="highlighter-rouge">https</code>是完全不同的。所以，当我们为链接增加跳转的网址时，必须说明是<code class="highlighter-rouge">http</code>还是<code class="highlighter-rouge">https</code>。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/26.png" alt="/WebCourse2017/assets/image/chapter2/26.png" />
+<img src="/WebCourse2017/assets/image/chapter2/25.png" alt="/WebCourse2017/assets/image/chapter2/25.png" />
+<img src="/WebCourse2017/assets/image/chapter2/36.png" alt="/WebCourse2017/assets/image/chapter2/36.png" /></p>
+
+<p>有的同学说，我平常都是输入:<code class="highlighter-rouge">www.baidu.com</code>呀，按刚刚的说明，我打开的应该是<code class="highlighter-rouge">http://www.baidu.com</code>，但为什么最终访问的却是<code class="highlighter-rouge">https://www.baidu.com</code>呢？</p>
+
+<p>这是由于，当我们访问<code class="highlighter-rouge">http://www.baidu.com</code>时，它自动（偷偷）的将我们的浏览器的访问地址重新定位于<code class="highlighter-rouge">https://www.baidu.com</code>了。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.hebut.edu.cn"</span><span class="nt">&gt;</span>河北工业大学<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.scse.hebut.edu.cn"</span><span class="nt">&gt;</span>计算机科学与软件学院<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.mengyunzhi.com"</span><span class="nt">&gt;</span>梦云智软件开发团队<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span></code></pre></figure>
+
+<p>此时，当我们再次进行点击时，页面已经可以进行跳转了。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/3.gif" alt="/WebCourse2017/assets/image/chapter2/3.gif" /></p>
+
+<h2 id="增加图片">增加图片</h2>
+<p>我们平常接触到的链接，除了有文字形式的，还有一些是图片形式的。这是怎么做到的呢？</p>
+
+<p>很简单，这是因为<code class="highlighter-rouge">a</code>标签，不但可以是文字，还可以是图片。为此，我们找到了三个相关的图片，并使用QQ的截图功能，将其大小处理为长150像素，高40像素。如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/27.png" alt="/WebCourse2017/assets/image/chapter2/27.png" />
+<img src="/WebCourse2017/assets/image/chapter2/28.png" alt="/WebCourse2017/assets/image/chapter2/28.png" />
+<img src="/WebCourse2017/assets/image/chapter2/29.png" alt="/WebCourse2017/assets/image/chapter2/29.png" /></p>
+
+<p>然后将其放置到<code class="highlighter-rouge">index.html</code>的同级文件夹中。最终，此文件夹中的内容如下：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/30.png" alt="/WebCourse2017/assets/image/chapter2/30.png" /></p>
+
+<p>接下来，我们使用图片替换原来的文字，这和我们在第二节插入图片的操作基本相同。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"hebut.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.scse.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"scse.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.mengyunzhi.com"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"mengyunzhi.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span></code></pre></figure>
+
+<p>此时，我们再刷新页面，发现以前的文字已经变成我们想要的图片了。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter2/31.png" alt="/WebCourse2017/assets/image/chapter2/31.png" /></p>
+
+<p>同样的，由于<code class="highlighter-rouge">a</code>标签的作用，当我们将鼠标移动到<code class="highlighter-rouge">a</code>标签中的图片上时，鼠标将变成 手状。以示该图片是一个链接。</p>
+
+<blockquote>
+  <p>问题：<code class="highlighter-rouge">a</code>标签中，除了可以是图片标签外，还可以是其它标签吗？</p>
+</blockquote>
+
+<h2 id="新标签打开链接">新标签打开链接</h2>
+<p>有时候，特别是在设置友情链接时，我们希望用户点击链接时，能够在一个新的窗口中打开，这时候就需要用到<code class="highlighter-rouge">a</code>标签的<code class="highlighter-rouge">target</code>属性了, 我们将其设置为<code class="highlighter-rouge">_blank</code>，即在新的窗口打口。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"hebut.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"http://www.scse.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"scse.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.mengyunzhi.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"mengyunzhi.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span></code></pre></figure>
+
+<p>此时，当我们点击第二个和第三个链接时，浏览器将会启动一个新个窗口，并在这个新窗口中显示网页的内容。</p>
+
+<h2 id="总结">总结</h2>
+<p>本节中，我们扩充了<code class="highlighter-rouge">a</code>标签的知识，在<code class="highlighter-rouge">a</code>标签中加入了图片标签，以实现点击图片进行跳转的目标。最后，我们加入了<code class="highlighter-rouge">target</code>属性，来告诉浏览器，将页面需要在一个新的窗口中打开。</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>参考：</td>
+        <td><a href="http://www.runoob.com/html/html-links.html">http://www.runoob.com/html/html-links.html</a></td>
+        <td><a href="http://www.runoob.com/tags/tag-a.html">http://www.runoob.com/tags/tag-a.html</a></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h3 id="完整代码">完整代码</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>我是标题<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="c">&lt;!-- 导航 --&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>自我介绍<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>所学课程<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>我的建议<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>友情链接<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>生活中的我<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 导航 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 基本信息 --&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"duolaiameng.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>梦云智软件开发团队. 2014.12.20. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:3792535@qq.com"</span><span class="nt">&gt;</span>3792535@qq.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 基本信息 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 所学课程 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>所学课程<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li&gt;</span>软件工程<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>数据库<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>C语言程序设计<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>面向对象的编程思想<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 所学课程 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 我的建议 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>我的建议<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>乐于帮助他人，善于向他人寻求帮助。<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>充分接触计算机工程，进一步的了解它是否适合于自己<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>如果有梦想，就要敢于付出。因为只有这样，才能自信满满地来取悦自己。<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>如果你愿意，我愿意与你共同进度。<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 我的建议 结束 --&gt;</span>
+
+    <span class="c">&lt;!-- 友情链接 --&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>友情链接<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"hebut.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"http://www.scse.hebut.edu.cn"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"scse.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.mengyunzhi.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"mengyunzhi.png"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- 友情链接 结束 --&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
 
   </div>
 

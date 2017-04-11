@@ -1,5 +1,411 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-04-10T17:17:36+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
-</subtitle><entry><title type="html">第七节：生活中的我模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/7-div-img/" rel="alternate" type="text/html" title="第七节：生活中的我模块" /><published>2017-04-10T17:00:26+08:00</published><updated>2017-04-10T17:00:26+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/7-div-img</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/7-div-img/"></content><author><name>河北工业大学</name></author><summary type="html"></summary></entry><entry><title type="html">第六节：友情链接模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/6-a/" rel="alternate" type="text/html" title="第六节：友情链接模块" /><published>2017-04-10T16:59:11+08:00</published><updated>2017-04-10T16:59:11+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/6-a</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/6-a/"></content><author><name>河北工业大学</name></author><summary type="html"></summary></entry><entry><title type="html">第五节：我的建议模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/5-unorder-list/" rel="alternate" type="text/html" title="第五节：我的建议模块" /><published>2017-04-10T16:57:31+08:00</published><updated>2017-04-10T16:57:31+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/5-unorder-list</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/5-unorder-list/">&lt;p&gt;本节中，我们共同来完成我的建议模块：
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-04-11T16:23:07+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
+</subtitle><entry><title type="html">第七节：生活中的我模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/7-div-img/" rel="alternate" type="text/html" title="第七节：生活中的我模块" /><published>2017-04-10T17:00:26+08:00</published><updated>2017-04-10T17:00:26+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/7-div-img</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/7-div-img/">&lt;p&gt;本节上，让我们共同完成“照片墙”模块，即“生活中的我”模块。照片墙我们也不陌生，比如说百度的图片搜索，最终便是以照片墙的形式展现给我们的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/35.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/35.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们看到，第一张图片就像一块砖一样，最终形成了照片墙。&lt;/p&gt;
+
+&lt;p&gt;我们也要做照片墙，和百度给我们的稍有不同，百度的照片墙，是一行一行的提供给我们的。比如，我们红色框出第一行，用绿色框出第三行。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/37.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/37.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;而我们的个人简历，是一列一列提供给我们的。&lt;/p&gt;
+
+&lt;p&gt;比如我们红色圈出第一列，用绿色圈出第二列。
+&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/38.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/38.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，无论是行为主，还是列为主，我们都可以使用我们前面学过的表格的方式来成功的开发出照片墙。&lt;/p&gt;
+
+&lt;h2 id=&quot;初始化&quot;&gt;初始化&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;准备素材&quot;&gt;准备素材&lt;/h2&gt;
+&lt;p&gt;我准备了3个图片素材：400px(像素) * 280px(像素)一张，400px * 140px 两张。
+如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/32.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/32.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/33.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/33.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/34.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/34.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;并把上述三张图片，放至到&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;所在路径。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/41.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/41.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;制作表格&quot;&gt;制作表格&lt;/h2&gt;
+&lt;p&gt;在制作照片墙的过程中，我们遵循的原则是：由大到小，先行后列。&lt;/p&gt;
+
+&lt;p&gt;按上述原则，我们对照片墙进行第一步分解，即开发一个1行2列的表格。如下图:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/39.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/39.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;代码如下：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;第一行第一列&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;第一行第二列&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/40.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/40.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;插入图片&quot;&gt;插入图片&lt;/h2&gt;
+&lt;p&gt;和在上节中为&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签加图片一样，我们直接将图片插入到表格数据单元&lt;code class=&quot;highlighter-rouge&quot;&gt;td&lt;/code&gt;中。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;第一行第二列&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;效果如下:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/42.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/42.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们看到，表格中的第一列中加入了图片，第二中仍然是文字。&lt;/p&gt;
+
+&lt;h2 id=&quot;建立子表格&quot;&gt;建立子表格&lt;/h2&gt;
+&lt;p&gt;第二列中，我们需要将其转化为一个2行1列的表格。即:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/43.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/43.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;td&lt;/code&gt;标签中，除了前面我们接触到的，可以加入文字、图片外，还可以加入其它的标签来实现更多的展示效果。比如，我们在这里在&lt;code class=&quot;highlighter-rouge&quot;&gt;td&lt;/code&gt;中加入&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;标签。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;table&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;为了使代码更易读，我们对上述代码进行格式化。代码的格式化对代码进行换行，也多了一些空格，但没有关系，因为浏览器会自动的忽略这些换行与空格，以保证格式化后的效果与格式化前一模一样。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;然后，我们在子&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;标签中加入两个行标签&lt;code class=&quot;highlighter-rouge&quot;&gt;tr&lt;/code&gt;, 实现2行。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;在每一行中，都增加一列：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;第一行，第一列&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;第二行，第一列&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/44.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/44.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;插入图片-1&quot;&gt;插入图片&lt;/h3&gt;
+&lt;p&gt;和前面一样，我们将两个小图片分别插入到第一行，第一列与第二行，第一列的位置上。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*280.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*140-1.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400*140-2.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 生活中的我 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/45.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/45.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;至此，一个小的照片墙开发便开发成功了。&lt;/p&gt;
+
+&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;
+&lt;p&gt;我们使用了&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;标签中嵌套&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;标签的方法来实现了照片墙。在将照片墙转化为&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;时，我们遵循的原则是：由大到小，先行后列。&lt;code class=&quot;highlighter-rouge&quot;&gt;tabel&lt;/code&gt;嵌套成功后，直接插入了&lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt;标签来实现了显示照片的目的。在实际的开发中，我们也会大量的使用标签嵌套的方法来实现更加复杂的效果。&lt;/p&gt;
+
+&lt;p&gt;至此，一个简单的个人简历便开发完毕了。通过对本章的学习，我们不难发现。&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;在初级学习阶段，更多的是对标签的记忆和使用。我们需要了解到底有多少种标签，每种标签又能实现什么样的功能。其实不仅是&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;，其它语言的学习也是一样的，有一些约定的东西，需要我们进行一定的记忆。我们这里的记忆，并不是指当我们需要使用某一种标签时，能够默写出这个标签，能够熟悉这个标签每个属性的写法。而是，我们需要第一时间内确定&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;是否有实现这个功能的标签，确定这点后，我们需要进行搜索，来查看这个标签的用法及属性，最终借助搜索工具来实现的我们的开发。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;简单的事情重复做，你就是专家!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;当我们重复的够多的时候，有一天你会突然发现，不经意间，我们竟然记住了所有常用的标签，而且对标签的属性也了如指掌。&lt;/p&gt;
+
+&lt;p&gt;还等什么，赶快打开菜鸟教程，让我们从一个菜鸟开始，感受&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;的伟大魅力吧！&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;菜鸟教程：&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/&quot;&gt;http://www.runoob.com/&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;推荐图书：Head First HTML与CSS（第2版） [Head First HTML and CSS,Second Edition]&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/46.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/46.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;写在最后&quot;&gt;写在最后：&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;可以认为是计算机工程中，最简单的语言。它是其它语言的基础, 如果我们有机会接触手机开发，你会发现在&lt;code class=&quot;highlighter-rouge&quot;&gt;ios&lt;/code&gt;开发及&lt;code class=&quot;highlighter-rouge&quot;&gt;android&lt;/code&gt;开发中，其视图的布局思想与&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;大同小异；如果我们有机会接触B/S架构下的应用程序开发，你会发现&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;是你所需要掌握的必备技能；如果我们有机会接触微信小程序开发，你也会在其布局中找到&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;的身影。何止如此？我们在C++的MFC中，VB，VF的视图中，不也可以看到一样的视图布局思想吗？&lt;/p&gt;</content><author><name>河北工业大学</name></author><summary type="html">本节上，让我们共同完成“照片墙”模块，即“生活中的我”模块。照片墙我们也不陌生，比如说百度的图片搜索，最终便是以照片墙的形式展现给我们的。</summary></entry><entry><title type="html">第六节：友情链接模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/6-a/" rel="alternate" type="text/html" title="第六节：友情链接模块" /><published>2017-04-10T16:59:11+08:00</published><updated>2017-04-10T16:59:11+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/6-a</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/6-a/">&lt;p&gt;我们在前面的小节中，已经使用&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;锚点标签实现了自动启用系统邮件客户端的功能。在本节中，我们使用&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签来实现页面间的跳转。&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签可以说是最重要的标签，有了&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签，才有了我们的&lt;code class=&quot;highlighter-rouge&quot;&gt;超链接&lt;/code&gt;，这使得我们从一个网页跳转至另一个网页成为了可能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/22.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/22.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;初始化&quot;&gt;初始化&lt;/h2&gt;
+&lt;p&gt;和前面的章节一样，我们在进行开发前，进行一些初始化操作。这将使得我们的代码更易读，界面展示层次感更强。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/23.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/23.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;加入链接&quot;&gt;加入链接&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;增加3个&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;河北工业大学&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;计算机科学与软件学院&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;梦云智软件开发团队&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/24.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/24.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.增加链接的值&lt;/p&gt;
+
+&lt;p&gt;比如河北工业大学的网址为:&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.hebut.edu.cn&lt;/code&gt;,计算机科学与软件学院网址为&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.scse.hebut.edu.cn&lt;/code&gt;, 梦云智软件开发团队的网址为&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.mengyunzhi.com&lt;/code&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;是的，没错，我们需要有&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;的字样.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;大多数的网址都是&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;打头的，当浏览器看到&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;打头的网址时，会为我们自动省略&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;。但也有很多网址是&lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;打头的，比如:&lt;code class=&quot;highlighter-rouge&quot;&gt;https://www.google.com&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;https://www.baidu.com&lt;/code&gt;。而&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;是完全不同的。所以，当我们为链接增加跳转的网址时，必须说明是&lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;还是&lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/26.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/26.png&quot; /&gt;
+&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/25.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/25.png&quot; /&gt;
+&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/36.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/36.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;有的同学说，我平常都是输入:&lt;code class=&quot;highlighter-rouge&quot;&gt;www.baidu.com&lt;/code&gt;呀，按刚刚的说明，我打开的应该是&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.baidu.com&lt;/code&gt;，但为什么最终访问的却是&lt;code class=&quot;highlighter-rouge&quot;&gt;https://www.baidu.com&lt;/code&gt;呢？&lt;/p&gt;
+
+&lt;p&gt;这是由于，当我们访问&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.baidu.com&lt;/code&gt;时，它自动（偷偷）的将我们的浏览器的访问地址重新定位于&lt;code class=&quot;highlighter-rouge&quot;&gt;https://www.baidu.com&lt;/code&gt;了。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;河北工业大学&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.scse.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;计算机科学与软件学院&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mengyunzhi.com&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;梦云智软件开发团队&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;此时，当我们再次进行点击时，页面已经可以进行跳转了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/3.gif&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/3.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;增加图片&quot;&gt;增加图片&lt;/h2&gt;
+&lt;p&gt;我们平常接触到的链接，除了有文字形式的，还有一些是图片形式的。这是怎么做到的呢？&lt;/p&gt;
+
+&lt;p&gt;很简单，这是因为&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签，不但可以是文字，还可以是图片。为此，我们找到了三个相关的图片，并使用QQ的截图功能，将其大小处理为长150像素，高40像素。如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/27.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/27.png&quot; /&gt;
+&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/28.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/28.png&quot; /&gt;
+&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/29.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/29.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后将其放置到&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;的同级文件夹中。最终，此文件夹中的内容如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/30.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/30.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来，我们使用图片替换原来的文字，这和我们在第二节插入图片的操作基本相同。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hebut.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.scse.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scse.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mengyunzhi.com&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mengyunzhi.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;此时，我们再刷新页面，发现以前的文字已经变成我们想要的图片了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/31.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/31.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同样的，由于&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签的作用，当我们将鼠标移动到&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签中的图片上时，鼠标将变成 手状。以示该图片是一个链接。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;问题：&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签中，除了可以是图片标签外，还可以是其它标签吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;新标签打开链接&quot;&gt;新标签打开链接&lt;/h2&gt;
+&lt;p&gt;有时候，特别是在设置友情链接时，我们希望用户点击链接时，能够在一个新的窗口中打开，这时候就需要用到&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签的&lt;code class=&quot;highlighter-rouge&quot;&gt;target&lt;/code&gt;属性了, 我们将其设置为&lt;code class=&quot;highlighter-rouge&quot;&gt;_blank&lt;/code&gt;，即在新的窗口打口。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hebut.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_blank&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.scse.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scse.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mengyunzhi.com&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_blank&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mengyunzhi.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;此时，当我们点击第二个和第三个链接时，浏览器将会启动一个新个窗口，并在这个新窗口中显示网页的内容。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+&lt;p&gt;本节中，我们扩充了&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签的知识，在&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;标签中加入了图片标签，以实现点击图片进行跳转的目标。最后，我们加入了&lt;code class=&quot;highlighter-rouge&quot;&gt;target&lt;/code&gt;属性，来告诉浏览器，将页面需要在一个新的窗口中打开。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;参考：&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/html/html-links.html&quot;&gt;http://www.runoob.com/html/html-links.html&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/tags/tag-a.html&quot;&gt;http://www.runoob.com/tags/tag-a.html&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;完整代码&quot;&gt;完整代码&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;我是标题&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 导航 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;自我介绍&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;所学课程&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;我的建议&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;生活中的我&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 导航 结束 --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 基本信息 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;duolaiameng.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;梦云智软件开发团队. 2014.12.20. &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mailto:3792535@qq.com&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3792535@qq.com&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 基本信息 结束 --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 所学课程 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;所学课程&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;软件工程&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;数据库&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;C语言程序设计&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;面向对象的编程思想&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 所学课程 结束 --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 我的建议 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;我的建议&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;乐于帮助他人，善于向他人寻求帮助。&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;充分接触计算机工程，进一步的了解它是否适合于自己&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;如果有梦想，就要敢于付出。因为只有这样，才能自信满满地来取悦自己。&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;如果你愿意，我愿意与你共同进度。&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 我的建议 结束 --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;友情链接&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hebut.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_blank&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.scse.hebut.edu.cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scse.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mengyunzhi.com&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_blank&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mengyunzhi.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 友情链接 结束 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>河北工业大学</name></author><summary type="html">我们在前面的小节中，已经使用a锚点标签实现了自动启用系统邮件客户端的功能。在本节中，我们使用a标签来实现页面间的跳转。a标签可以说是最重要的标签，有了a标签，才有了我们的超链接，这使得我们从一个网页跳转至另一个网页成为了可能。</summary></entry><entry><title type="html">第五节：我的建议模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/5-unorder-list/" rel="alternate" type="text/html" title="第五节：我的建议模块" /><published>2017-04-10T16:57:31+08:00</published><updated>2017-04-10T16:57:31+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/5-unorder-list</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/5-unorder-list/">&lt;p&gt;本节中，我们共同来完成我的建议模块：
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/18.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/18.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;有了前面我的课程模块，这个模块就变成了本章中最简单的模块了。&lt;/p&gt;
@@ -60,7 +466,7 @@
 &lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/19.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/19.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;增加无序列表&quot;&gt;增加无序列表&lt;/h2&gt;
-&lt;p&gt;无序列表 = &lt;code class=&quot;highlighter-rouge&quot;&gt;unordered list&lt;/code&gt; = &lt;code class=&quot;highlighter-rouge&quot;&gt;ul&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在上节中，我们使用的是有序列表&lt;code class=&quot;highlighter-rouge&quot;&gt;ordered list&lt;/code&gt; =&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;ol&lt;/code&gt;, 本节中，我们将有序列表&lt;code class=&quot;highlighter-rouge&quot;&gt;ol&lt;/code&gt;，更换为 无序列表 =&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;unordered list&lt;/code&gt; =&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;ul&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 我的建议 --&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;我的建议&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
@@ -96,10 +502,17 @@
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/21.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/21.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;总结&quot;&gt;总结：&lt;/h1&gt;
-&lt;p&gt;本节中，我们只学习了一个标签&lt;code class=&quot;highlighter-rouge&quot;&gt;ul (unordered list)&lt;/code&gt;无序列表。如果在实验过程中，你感觉吃力的话，那么只能说明我们重复的还不够多。其实大多数的时候，并不是由于我们聪明所以才学的好；而是由于我们学的好而聪明。想看到那个更好聪明的你吗？很简单，重复做几次。是的，没错，就这么简单。&lt;/p&gt;
+&lt;p&gt;本节中，我们学习了标签&lt;code class=&quot;highlighter-rouge&quot;&gt;ul (unordered list)&lt;/code&gt; – 无序列表，并使用其开发了“我的建议”模块。&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;简单的事情重复做，你就是专家。&lt;/p&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;参考：&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/tags/tag-ul.html&quot;&gt;http://www.runoob.com/tags/tag-ul.html&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
 &lt;/blockquote&gt;</content><author><name>河北工业大学</name></author><summary type="html">本节中，我们共同来完成我的建议模块：</summary></entry><entry><title type="html">第四节：所学课程模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/4-order-list/" rel="alternate" type="text/html" title="第四节：所学课程模块" /><published>2017-04-10T16:40:25+08:00</published><updated>2017-04-10T16:40:25+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/4-order-list</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/4-order-list/">&lt;p&gt;本节中，我们共同来完成所学课程模块：
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/15.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/15.png&quot; /&gt;&lt;/p&gt;
 
@@ -185,7 +598,11 @@
 &lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/17.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/17.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;总结&quot;&gt;总结：&lt;/h2&gt;
-&lt;p&gt;本节中，我们使用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;标签创建一个标题，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;ol&lt;/code&gt;标签来声明了有序列表，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;li&lt;/code&gt;标签来进行有序列表的数据添加，最后达到了我们的预期效果。&lt;/p&gt;</content><author><name>河北工业大学</name></author><summary type="html">本节中，我们共同来完成所学课程模块：</summary></entry><entry><title type="html">第二节：基本信息模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/3-image/" rel="alternate" type="text/html" title="第二节：基本信息模块" /><published>2017-04-10T15:37:53+08:00</published><updated>2017-04-10T15:37:53+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/3-image</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/3-image/">&lt;p&gt;本节中，我们来开发基本信息模块：
+&lt;p&gt;本节中，我们使用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;标签创建一个标题，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;ol&lt;/code&gt;标签来声明了有序列表，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;li&lt;/code&gt;标签来进行有序列表的数据添加，最后达到了我们的预期效果。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;参考：&lt;a href=&quot;http://www.runoob.com/tags/tag-ol.html&quot;&gt;http://www.runoob.com/tags/tag-ol.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>河北工业大学</name></author><summary type="html">本节中，我们共同来完成所学课程模块：</summary></entry><entry><title type="html">第二节：基本信息模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/3-image/" rel="alternate" type="text/html" title="第二节：基本信息模块" /><published>2017-04-10T15:37:53+08:00</published><updated>2017-04-10T15:37:53+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/3-image</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/3-image/">&lt;p&gt;本节中，我们来开发基本信息模块：
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/9.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/9.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;生活照&quot;&gt;生活照&lt;/h2&gt;
@@ -370,7 +787,11 @@
 &lt;h2 id=&quot;总结&quot;&gt;总结：&lt;/h2&gt;
 &lt;p&gt;在本节中，我们学习使用了图片标签&lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt;, 并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt;标签的&lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;属性来说明了图片的位置；锚点标签&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;，并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt;属性来说明了超文本链接引用的位置，最后在&lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt;中使用&lt;code class=&quot;highlighter-rouge&quot;&gt;mailto:&lt;/code&gt;来达到了启用邮件客户端发送邮件的目的。紧接着，我们使用&lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt;标签来产生了两条水平分隔性，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!-- --&amp;gt;&lt;/code&gt;标签为软件工程师们增加了注释。&lt;/p&gt;
 
-&lt;p&gt;是的，就是这&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;,就是&lt;code class=&quot;highlighter-rouge&quot;&gt;MarkUp&lt;/code&gt;(标记 标签)，就是 超文本标记语言 – &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;。&lt;/p&gt;</content><author><name>作者</name></author><summary type="html">本节中，我们来开发基本信息模块：</summary></entry><entry><title type="html">第二节：导航模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/2-table-nav/" rel="alternate" type="text/html" title="第二节：导航模块" /><published>2017-04-10T14:30:02+08:00</published><updated>2017-04-10T14:30:02+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/2-table-nav</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/2-table-nav/">&lt;p&gt;本节中，我们将开发导航模块：
+&lt;p&gt;是的，就是这&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;,就是&lt;code class=&quot;highlighter-rouge&quot;&gt;MarkUp&lt;/code&gt;(标记 标签)，就是 超文本标记语言 – &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;参考：&lt;a href=&quot;http://www.runoob.com/tags/tag-img.html&quot;&gt;http://www.runoob.com/tags/tag-img.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>作者</name></author><summary type="html">本节中，我们来开发基本信息模块：</summary></entry><entry><title type="html">第二节：导航模块</title><link href="http://localhost:4000/WebCourse2017/chapter2/2-table-nav/" rel="alternate" type="text/html" title="第二节：导航模块" /><published>2017-04-10T14:30:02+08:00</published><updated>2017-04-10T14:30:02+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/2-table-nav</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/2-table-nav/">&lt;p&gt;本节中，我们将开发导航模块：
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/5.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/5.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;table&quot;&gt;table&lt;/h1&gt;
@@ -490,7 +911,20 @@
 &lt;h2 id=&quot;总结&quot;&gt;总结：&lt;/h2&gt;
 &lt;p&gt;本节中，我们学习了三个新的标签，它们是:&lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;表格标签,&lt;code class=&quot;highlighter-rouge&quot;&gt;tr(tabel row)&lt;/code&gt;表格中的行标签，&lt;code class=&quot;highlighter-rouge&quot;&gt;td (table data)&lt;/code&gt;行中的列（数据）标签。是的，你猜的没错，基本的&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;的学习，就是标签的学习，而标签的学习，是一个纯的记忆的过程。其实我们大可不必去刻意的记忆这些标签，我们只要做到当我们需要使用表格的时候，能够知道应该去搜索“html 表格”，就已经达到了学习的目的。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/8.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/8.png&quot; /&gt;&lt;/p&gt;</content><author><name>作者</name></author><summary type="html">本节中，我们将开发导航模块：</summary></entry><entry><title type="html">第一节：基本的html文件结构</title><link href="http://localhost:4000/WebCourse2017/chapter2/1-base-html/" rel="alternate" type="text/html" title="第一节：基本的html文件结构" /><published>2017-04-10T14:01:39+08:00</published><updated>2017-04-10T14:01:39+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/1-base-html</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/1-base-html/">&lt;p&gt;简单的事情重复做，你就是专家。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/8.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/8.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;参考:&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/tags/tag-table.html&quot;&gt;http://www.runoob.com/tags/tag-table.html&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/tags/tag-tr.html&quot;&gt;http://www.runoob.com/tags/tag-tr.html&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;http://www.runoob.com/tags/tag-td.html&quot;&gt;http://www.runoob.com/tags/tag-td.html&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/blockquote&gt;</content><author><name>作者</name></author><summary type="html">本节中，我们将开发导航模块：</summary></entry><entry><title type="html">第一节：基本的html文件结构</title><link href="http://localhost:4000/WebCourse2017/chapter2/1-base-html/" rel="alternate" type="text/html" title="第一节：基本的html文件结构" /><published>2017-04-10T14:01:39+08:00</published><updated>2017-04-10T14:01:39+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/1-base-html</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/1-base-html/">&lt;p&gt;简单的事情重复做，你就是专家。&lt;/p&gt;
 
 &lt;p&gt;在开始本节前，我们先复习下上一章中的内容：在计算机的任意位置上，新建&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;文件，并输入&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;Hello World!&amp;lt;h1&amp;gt;&lt;/code&gt;。然后在当前目录下，执行&lt;code class=&quot;highlighter-rouge&quot;&gt;git bash&lt;/code&gt;，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;http-server&lt;/code&gt;来启动这个服务。&lt;/p&gt;
 
@@ -516,7 +950,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter2/4.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/4.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;其它的，都是固有的写法。因为是固有的写法，所以当我们需要新建&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;文件时，将上面的代码&lt;code class=&quot;highlighter-rouge&quot;&gt;copy&lt;/code&gt;过去就可以了。&lt;/p&gt;
+&lt;p&gt;其它的，都是固有的写法。因为是固有的写法，所以当我们以后再新建&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;文件时，直接将上面的代码copy过去就可以了。&lt;/p&gt;
 
 &lt;p&gt;如果你在会使用的前提下，还想知道它都代表了什么意思，请阅读以下选学内容：&lt;/p&gt;
 
@@ -526,7 +960,7 @@
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter2/3.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter2/3.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第一部分，声明文档类型。
-如果你不清楚它是什么东西，或是不想清楚它是什么东西的话，那么需要记录它是固定写法就可以了。&lt;/p&gt;
+如果你不清楚它是什么东西，或是不想清楚它是什么东西的话，那么需要知道它是固定写法就可以了。&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;文档类型分为&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;html5&lt;/code&gt;。&lt;code class=&quot;highlighter-rouge&quot;&gt;html5&lt;/code&gt;是新的规范，兼容&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;，本课程中，我们使用的正是&lt;code class=&quot;highlighter-rouge&quot;&gt;html5&lt;/code&gt;。有了这行声明，浏览器就知道按照什么规范来对&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;进行解析了。&lt;/p&gt;
 
@@ -539,7 +973,11 @@
 &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;代码主体部分。&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;代码部分，又分为&lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;部分和&lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;部分。在&lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;中，我们定义了两项内容。第一项是个自闭合的&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;标签, 它定义了&lt;code class=&quot;highlighter-rouge&quot;&gt;charset=&quot;UTF-8&quot;&lt;/code&gt;，来告诉浏览器我们的文件所使用的编码格式（我们在课程中，全部使用utf-8），这样做能够有效的防止页面乱码。
-&lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;部分，是&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;代码的主体部分，我们在大多数代码，都要书写在这里。&lt;/p&gt;</content><author><name>作者</name></author><summary type="html">简单的事情重复做，你就是专家。</summary></entry><entry><title type="html">前言</title><link href="http://localhost:4000/WebCourse2017/chapter2/0/" rel="alternate" type="text/html" title="前言" /><published>2017-04-10T13:16:26+08:00</published><updated>2017-04-10T13:16:26+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/0</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/0/">&lt;p&gt;在上一章中，我们学会了网页开发环境的搭建。并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;sublime&lt;/code&gt;开发了第一个网页。同时，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;http-server&lt;/code&gt;建立了第一个服务来展现了我们的网页。最后，我们使用自己喜欢的浏览器来浏览了这个页面。&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;部分，是&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;代码的主体部分，我们在大多数代码，都要书写在这里。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;参考：&lt;a href=&quot;http://www.runoob.com/html/html-intro.html&quot;&gt;http://www.runoob.com/html/html-intro.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>河北工业大学</name></author><summary type="html">简单的事情重复做，你就是专家。</summary></entry><entry><title type="html">前言</title><link href="http://localhost:4000/WebCourse2017/chapter2/0/" rel="alternate" type="text/html" title="前言" /><published>2017-04-10T13:16:26+08:00</published><updated>2017-04-10T13:16:26+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter2/0</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter2/0/">&lt;p&gt;在上一章中，我们学会了网页开发环境的搭建。并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;sublime&lt;/code&gt;开发了第一个网页。同时，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;http-server&lt;/code&gt;建立了第一个服务来展现了我们的网页。最后，我们使用自己喜欢的浏览器来浏览了这个页面。&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;请思索，如何让坐在你临座的同学使用自己使用的计算机来欣赏你的作品呢？&lt;/p&gt;
@@ -559,7 +997,9 @@
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;本章作业&quot;&gt;本章作业&lt;/h2&gt;
-&lt;p&gt;建立个人简历页面（内容不限，形式不限，&lt;strong&gt;拥有版权&lt;/strong&gt;），并使用邻座的计算机来查看自己开发的个人简历页面。&lt;/p&gt;</content><author><name></name></author><summary type="html">在上一章中，我们学会了网页开发环境的搭建。并使用sublime开发了第一个网页。同时，使用http-server建立了第一个服务来展现了我们的网页。最后，我们使用自己喜欢的浏览器来浏览了这个页面。</summary></entry><entry><title type="html">第五节：Hello World!</title><link href="http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld/" rel="alternate" type="text/html" title="第五节：Hello World!" /><published>2017-04-10T11:36:53+08:00</published><updated>2017-04-10T11:36:53+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld/">&lt;p&gt;终于可以开发编写&lt;code class=&quot;highlighter-rouge&quot;&gt;HelloWorld!&lt;/code&gt;了。
+&lt;p&gt;建立个人简历页面（内容不限，形式不限，&lt;strong&gt;拥有代码版权&lt;/strong&gt;），并使用邻座的计算机来查看自己开发的个人简历页面。&lt;/p&gt;
+
+&lt;p&gt;本章素材下载地址：&lt;a href=&quot;https://pan.baidu.com/s/1dFMivZj&quot;&gt;https://pan.baidu.com/s/1dFMivZj&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">在上一章中，我们学会了网页开发环境的搭建。并使用sublime开发了第一个网页。同时，使用http-server建立了第一个服务来展现了我们的网页。最后，我们使用自己喜欢的浏览器来浏览了这个页面。</summary></entry><entry><title type="html">第五节：Hello World!</title><link href="http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld/" rel="alternate" type="text/html" title="第五节：Hello World!" /><published>2017-04-10T11:36:53+08:00</published><updated>2017-04-10T11:36:53+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter1/5-HelloWorld/">&lt;p&gt;终于可以开发编写&lt;code class=&quot;highlighter-rouge&quot;&gt;HelloWorld!&lt;/code&gt;了。
 我们使用的系统，默认是隐藏了文件的扩展名的。比如一个&lt;code class=&quot;highlighter-rouge&quot;&gt;word&lt;/code&gt;文档 – &lt;code class=&quot;highlighter-rouge&quot;&gt;hebut&lt;/code&gt;, 它的全称应该是&lt;code class=&quot;highlighter-rouge&quot;&gt;hebut.docx&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;hebut.doc&lt;/code&gt;。对普通的用户而言，显示扩展名无增加它使用系统的成本，因为大多数的非计算机专业的普通人，是搞不清同时也不愿意搞清什么&lt;code class=&quot;highlighter-rouge&quot;&gt;.docx&lt;/code&gt;的。但对于我们，查看并显示文件的扩展名，是一项不得不做的工作。&lt;/p&gt;
 
 &lt;blockquote&gt;
