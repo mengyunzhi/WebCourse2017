@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>第三节：标准流与浮动流</title>
+    <meta name="description" content="本节中，我们对标准流和浮动流有了基本的认识，并结合`clear`属性，来实现动态的布局。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/WebCourse2017/assets/css/style.css?v=">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">商业网站开发入门上机指导</h1>
+      <h2 class="project-tagline">技术支持：河北工业大学梦云智软件开发团队
+</h2>
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017/archive/master.zip" class="btn">Download .zip</a>
+      
+    </section>
+
+    <section class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">第三节：标准流与浮动流</h1>
+    <p class="post-meta"><time datetime="2017-04-19T13:51:37+08:00" itemprop="datePublished">Apr 19, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">河北工业大学</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>在上一节中，我们进行了照片墙的规划后，得到了如下效果：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/13.png" alt="/WebCourse2017/assets/image/chapter3/13.png" /></p>
+
+<p>原因是由于<code class="highlighter-rouge">div</code>默认的独占一行。由于每个<code class="highlighter-rouge">div</code>独占一行，所以<code class="highlighter-rouge">div</code>最终将自上而下的进行排列，当我们回想第二章中做的个人简介时，也能够充分的看到这点。无论我们在一行中写入的内容多与少，其均独占一行。</p>
+
+<p>比如下图中，我们在一个大盒子中建立了三个小盒子。虽然每个盒子的宽度都没有占满一行，但是其没有占满的空间却不能被下面的盒子所使用。我们把<code class="highlighter-rouge">div</code>的这种独占一行，自上而下的特性又称为<code class="highlighter-rouge">标准流</code>。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: #eee"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: red;height: 100px;width: 200px;color: #fff;"</span><span class="nt">&gt;</span>div1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: green;height: 100px;width: 300px;color: #fff;"</span><span class="nt">&gt;</span>div2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: yellow;height: 150px;width: 600px;"</span><span class="nt">&gt;</span>div3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div style="background-color: #eee">
+    <div style="background-color: red;height: 100px;width: 200px;color: #fff;">div1</div>
+    <div style="background-color: green;height: 100px;width: 300px;color: #fff;">div2</div>
+    <div style="background-color: yellow;height: 150px;width: 600px;">div3</div>
+</div>
+
+<p>与<code class="highlighter-rouge">标准流</code>相对应的，叫做<code class="highlighter-rouge">浮动流</code>。使用<code class="highlighter-rouge">float</code>属性。我们可以在<a href="http://www.runoob.com/css/css-float.html">菜鸟教程</a>获取更多关于浮动流的知识，也可以<code class="highlighter-rouge">google</code> — CSS 浮动，来获取更多的信息。浮动流，顾名思义，就是将盒子浮起来。</p>
+
+<p>下面，让我们共同来看看两个盒子浮动起来是个什么样子。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: #eee"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: red;height: 100px;width: 200px;color: #fff;float:left"</span><span class="nt">&gt;</span>div1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: green;height: 100px;width: 300px;color: #fff;float:left"</span><span class="nt">&gt;</span>div2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: yellow;height: 150px;width: 600px;"</span><span class="nt">&gt;</span>div3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div style="background-color: #eee">
+    <div style="background-color: red;height: 100px;width: 200px;color: #fff;float:left">div1</div>
+    <div style="background-color: green;height: 100px;width: 300px;color: #fff;float:left">div2</div>
+    <div style="background-color: yellow;height: 150px;width: 600px;">div3</div>
+</div>
+
+<p>我们看到，div3被浮动起来的div1,div2挡住了一部分。这是由于div1,div2是浮动流，而div3是标准流。标准流这个瞎子，是看不到那两个飘在空中的浮动流的，所以对于div3而言，div1、div2并不存在。在假设div1,div2不存在的情况下，div3当然就又固执的出现在了它本该出现的位置上了。</p>
+<hr />
+
+<blockquote>
+  <p>结论：标准流的盒子是看不到同级别的浮动流盒子的。</p>
+</blockquote>
+
+<hr />
+
+<p>其实，不止对于同级别的div3来说，div1,div2是不存的。对于父级别的div也同样看不到两个浮动起来的盒子。我们来减小一下div3的高度：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: #eee;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: red;height: 100px;width: 200px;color: #fff;float:left"</span><span class="nt">&gt;</span>div1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: green;height: 100px;width: 300px;color: #fff;float:left"</span><span class="nt">&gt;</span>div2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: yellow;height: 80px;width: 600px;"</span><span class="nt">&gt;</span>div3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div style="background-color: #eee;">
+    <div style="background-color: red;height: 100px;width: 200px;color: #fff;float:left">div1</div>
+    <div style="background-color: green;height: 100px;width: 300px;color: #fff;float:left">div2</div>
+    <div style="background-color: yellow;height: 80px;width: 600px;">div3</div>
+</div>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/16.png" alt="/WebCourse2017/assets/image/chapter3/16.png" /></p>
+
+<p>我们通过观察父盒子的背景色范围不难发现，父盒子的高度与div3相同。也就是说，尽管div1,div2也有一定的调试，但父盒子只会考虑标准流的div3来设置自己的调试。对于标准流的父盒子而言，两个浮动流的div就和不存在一样。</p>
+<hr />
+
+<blockquote>
+  <p>结论：标准流的父盒子是看不到位于其中浮动流的子盒子的。</p>
+</blockquote>
+
+<hr />
+
+<p>那么当我们并不希望div1,div2覆盖div3时怎么办呢？</p>
+
+<h1 id="clear">clear</h1>
+<p>盒子模型中的<code class="highlighter-rouge">clear</code>用来解决这个问题，译为中文为：清除。</p>
+
+<p>我们div3由于被div1,div2覆盖住，从而<strong>影响</strong>了表现效果。而使用<code class="highlighter-rouge">clear</code>属性，便可以清除由于它们带来的影响。</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: #eee;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: red;height: 100px;width: 200px;color: #fff;float:left"</span><span class="nt">&gt;</span>div1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: green;height: 100px;width: 300px;color: #fff;float:left"</span><span class="nt">&gt;</span>div2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color: yellow;height: 80px;width: 600px;clear: left;"</span><span class="nt">&gt;</span>div3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div style="background-color: #eee;">
+    <div style="background-color: red;height: 100px;width: 200px;color: #fff;float:left">div1</div>
+    <div style="background-color: green;height: 100px;width: 300px;color: #fff;float:left">div2</div>
+    <div style="background-color: yellow;height: 80px;width: 600px;clear: left;">div3</div>
+</div>
+
+<p><code class="highlighter-rouge">clear:left;</code> — 清除浮动流的左浮动给自己带来的影响。</p>
+
+<p>此时，由于清楚了浮动流中的左浮动给其带来的影响，div3就像看到了div1,div2一样，乖乖的位于两个div的下方了。</p>
+
+<p>注：除上述方法外，我们还可以设置父盒子的<code class="highlighter-rouge">overflow</code>属性来解决该问题，<a href="https://segmentfault.com/q/1010000005958273">segmentfault</a>中也有人对这个问题进行讨论。</p>
+
+<h1 id="总结">总结：</h1>
+<p>本节中，我们对标准流和浮动流有了基本的认识，并结合<code class="highlighter-rouge">clear</code>属性，来实现动态的布局。</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>参考：</td>
+        <td><a href="http://www.runoob.com/css/css-float.html">菜鸟教程</a></td>
+        <td><a href="http://www.w3school.com.cn/css/css_positioning_floating.asp">w3cshool在线</a></td>
+        <td><a href="https://www.w3schools.com/css/css_float.asp">w3schools</a></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+  </div>
+
+  
+</article>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages </a> and <a href="http://jekyllrb.com/">Jekyll</a>. Powered By: <a href="http://www.mengyunzhi.com">梦云智</a>. </span>
+      </footer>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>第二节：盒子模型</title>
+    <meta name="description" content="描述信息"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/WebCourse2017/assets/css/style.css?v=">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">商业网站开发入门上机指导</h1>
+      <h2 class="project-tagline">技术支持：河北工业大学梦云智软件开发团队
+</h2>
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017/archive/master.zip" class="btn">Download .zip</a>
+      
+    </section>
+
+    <section class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">第二节：盒子模型</h1>
+    <p class="post-meta"><time datetime="2017-04-19T10:02:33+08:00" itemprop="datePublished">Apr 19, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">河北工业大学</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>提到<code class="highlighter-rouge">html</code>并不得不提<code class="highlighter-rouge">css</code>,如果把<code class="highlighter-rouge">html</code>比做是一个校园，那么<code class="highlighter-rouge">css</code>就是校园的花花草草，绿树景观。<code class="highlighter-rouge">html</code>让我们看到一个校园，<code class="highlighter-rouge">css</code>则让我们看到了一个漂亮的校园。提到<code class="highlighter-rouge">css</code>，就不得不得<code class="highlighter-rouge">box model</code>盒子模型。</p>
+
+<p>那么什么是盒子模型呢？</p>
+
+<p>简单来说，就是把我们在网页上想呈现给大家内容都看成一张张照片，然后把这个照片放在一个相框里，我们把这个相框就叫做盒子。而这个相框对应的模型，就叫做相框模型（模型：现实的抽象）。</p>
+
+<p>是的，我们看到的每个相框，都是一个盒子！</p>
+
+<p>比如下图中，有10个相框，每个相框都是一个盒子。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/1.png" alt="/WebCourse2017/assets/image/chapter3/1.png" /></p>
+
+<p>菜鸟教程中，是如此描述盒子模型的。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/8.png" alt="/WebCourse2017/assets/image/chapter3/8.png" /></p>
+
+<hr />
+
+<p>Margin(外边距) - 清除边框外的区域，外边距是透明的。</p>
+
+<p>Border(边框) - 围绕在内边距和内容外的边框。</p>
+
+<p>Padding(内边距) - 清除内容周围的区域，内边距是透明的。</p>
+
+<p>Content(内容) - 盒子的内容，显示文本和图像。</p>
+<hr />
+
+<p>反映到相框上：<code class="highlighter-rouge">Margin(外边距)</code>、<code class="highlighter-rouge">Border(边框)</code>、<code class="highlighter-rouge">Padding(内边距)</code>、<code class="highlighter-rouge">Content(内容)</code>依次如下图所示:</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/10.png" alt="/WebCourse2017/assets/image/chapter3/10.png" />
+<img src="/WebCourse2017/assets/image/chapter3/11.png" alt="/WebCourse2017/assets/image/chapter3/11.png" />
+<img src="/WebCourse2017/assets/image/chapter3/12.png" alt="/WebCourse2017/assets/image/chapter3/11.png" />
+<img src="/WebCourse2017/assets/image/chapter3/9.png" alt="/WebCourse2017/assets/image/chapter3/9.png" /></p>
+
+<p>同时，我们均可以定义它们的大小。<code class="highlighter-rouge">Margin(外边距)</code>、<code class="highlighter-rouge">Border(边框)</code>、<code class="highlighter-rouge">Padding(内边距)</code>分别可以定义<code class="highlighter-rouge">top</code>、<code class="highlighter-rouge">right</code>、<code class="highlighter-rouge">bottom</code>、<code class="highlighter-rouge">left</code>。<code class="highlighter-rouge">Content(内容)</code>可以定义<code class="highlighter-rouge">width</code>与<code class="highlighter-rouge">height</code>。</p>
+
+<p>所以，盒子模型还可以这样描述：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/1.jpeg" alt="/WebCourse2017/assets/image/chapter3/1.jpeg" /></p>
+
+<h1 id="一切皆盒子">一切皆盒子</h1>
+<p>其实，我们前面学过的所有的标签，都可以看作一个盒子。比如<code class="highlighter-rouge">h</code>标签、<code class="highlighter-rouge">p</code>标签、<code class="highlighter-rouge">a</code>标签等。</p>
+
+<p><a href="http://www.runoob.com/css/css-boxmodel.html">菜鸟教程</a>中，是这样描述的：</p>
+
+<p>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。
+CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
+盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
+
+<blockquote>
+  <p>在具体的编写中，标准的盒子<code class="highlighter-rouge">div</code>标签在网页布局中，被广泛的采用。</p>
+</blockquote>
+
+<h1 id="用盒子模型开发照片墙">用盒子模型开发照片墙</h1>
+
+<p>参考上节中的代码描述：</p>
+<ul>
+  <li>上下分成两行，编号为：<code class="highlighter-rouge">行1</code>，<code class="highlighter-rouge">行2</code>.
+    <ul>
+      <li>将<code class="highlighter-rouge">行1</code>划分为3列，编号为:<code class="highlighter-rouge">列1.1</code>, <code class="highlighter-rouge">列1.2</code>, <code class="highlighter-rouge">列1.3</code>
+        <ul>
+          <li>将<code class="highlighter-rouge">列1.1</code>划分为2行，编号为<code class="highlighter-rouge">行1.1.1</code>, <code class="highlighter-rouge">行1.1.2</code>
+            <ul>
+              <li>将<code class="highlighter-rouge">行1.1.1</code>划分为2列，编号为<code class="highlighter-rouge">列1.1.1.1</code>，<code class="highlighter-rouge">列1.1.1.2</code></li>
+            </ul>
+          </li>
+          <li>将<code class="highlighter-rouge">列1.2</code>划分为2行，编号为<code class="highlighter-rouge">行1.2.1</code>， <code class="highlighter-rouge">行1.2.2</code></li>
+        </ul>
+      </li>
+      <li>将<code class="highlighter-rouge">行2</code>划分为4列，编号为<code class="highlighter-rouge">列2.1</code>, <code class="highlighter-rouge">列2.2</code>, <code class="highlighter-rouge">列2.3</code>, <code class="highlighter-rouge">列2.4</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="初始化">初始化</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"zh-hans"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>照片墙<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h2 id="上下两行">上下两行</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- 画一个大框 --&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+        <span class="c">&lt;!-- 行1 --&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 行2 --&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 1.3 --&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="开发子盒子">开发子盒子</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- 画一个大框 --&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+        <span class="c">&lt;!-- 行1 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 1.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 行2 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 2.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.4 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="开发子子盒子">开发子子盒子</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- 画一个大框 --&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+        <span class="c">&lt;!-- 行1 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 1.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.1.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.1.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.2.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.2.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 行2 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 2.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.4 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="再拆分">再拆分</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- 画一个大框 --&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+        <span class="c">&lt;!-- 行1 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 1.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.1.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;</span>
+                    <span class="c">&lt;!-- 1.1.1.1 --&gt;</span>
+                    <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                    <span class="c">&lt;!-- 1.1.1.2 --&gt;</span>
+                    <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.1.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.2.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.2.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 行2 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 2.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.4 --&gt;</span>
+            <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="添加内容">添加内容</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- 画一个大框 --&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+        <span class="c">&lt;!-- 行1 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 1.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.1.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;</span>
+                    <span class="c">&lt;!-- 1.1.1.1 --&gt;</span>
+                    <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+                    <span class="c">&lt;!-- 1.1.1.2 --&gt;</span>
+                    <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.1.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="c">&lt;!-- 1.2.1 --&gt;</span>
+                <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+                <span class="c">&lt;!-- 1.2.2 --&gt;</span>
+                <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 1.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!-- 行2 --&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="c">&lt;!-- 2.1 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.2 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.3 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+            <span class="c">&lt;!-- 2.4 --&gt;</span>
+            <span class="nt">&lt;div&gt;</span>照片<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="查看效果">查看效果</h2>
+<p><img src="/WebCourse2017/assets/image/chapter3/13.png" alt="/WebCourse2017/assets/image/chapter3/13.png" /></p>
+
+<p><strong>说好的照片墙呢？</strong></p>
+
+<p>只所以没有看到墙的效果，这是由于<code class="highlighter-rouge">div</code>有个默认的属性：独占一行。在此默认属性的作用的下，每个<code class="highlighter-rouge">div</code>都占满父元素100%的宽度。那么如何使用<code class="highlighter-rouge">div</code>达到表格中列的效果呢？在下节中，我们进行讲解。</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>参考:</td>
+        <td><a href="http://www.runoob.com/css/css-boxmodel.html">菜鸟教程</a></td>
+        <td><a href="http://www.w3school.com.cn/css/css_boxmodel.asp">w3cshool在线</a></td>
+        <td><a href="https://www.w3schools.com/css/css_boxmodel.asp">w3schools</a></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+
+  </div>
+
+  
+</article>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages </a> and <a href="http://jekyllrb.com/">Jekyll</a>. Powered By: <a href="http://www.mengyunzhi.com">梦云智</a>. </span>
+      </footer>
+    </section>
+
+  </body>
+</html>

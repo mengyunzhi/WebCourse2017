@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>第六节：设置边框border</title>
+    <meta name="description" content="描述信息"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/WebCourse2017/assets/css/style.css?v=">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">商业网站开发入门上机指导</h1>
+      <h2 class="project-tagline">技术支持：河北工业大学梦云智软件开发团队
+</h2>
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/mengyunzhi/WebCourse2017/archive/master.zip" class="btn">Download .zip</a>
+      
+    </section>
+
+    <section class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">第六节：设置边框border</h1>
+    <p class="post-meta"><time datetime="2017-04-20T14:02:59+08:00" itemprop="datePublished">Apr 20, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">河北工业大学</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><img src="/WebCourse2017/assets/image/chapter3/1.png" alt="/WebCourse2017/assets/image/chapter3/1.png" /></p>
+
+<p>本节中，让我们参考上图，为照片增加相框。</p>
+
+<p>在<code class="highlighter-rouge">html</code>(确切的说应该是<code class="highlighter-rouge">css</code>)，中。相框使用的属性是<code class="highlighter-rouge">border</code>,即边框。每个相片都对应有上下左右四个边框，所以也就有了<code class="highlighter-rouge">border-top</code>、<code class="highlighter-rouge">border-bottom</code>、<code class="highlighter-rouge">border-right</code>、<code class="highlighter-rouge">border-left</code>四个属性。当我们想到四个边框进行统一设置时，使用<code class="highlighter-rouge">border</code>属性就可以了。</p>
+
+<p>此外，常用的与边框相关的属性还有：<code class="highlighter-rouge">border-width</code>边框宽度、<code class="highlighter-rouge">border-style</code>边框样式（实线、虚线等）、<code class="highlighter-rouge">border-color</code>边框颜色。</p>
+
+<blockquote>
+  <p>参考: <a href="http://www.runoob.com/css/css-border.html">http://www.runoob.com/css/css-border.html</a></p>
+</blockquote>
+
+<h1 id="增加边框">增加边框</h1>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">                    <span class="c">&lt;!-- 1.1.1.1 --&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: left; border-width: 10px;border-style: solid;border-color: #060504"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"1.png"</span> <span class="nt">/&gt;&lt;/div&gt;</span></code></pre></figure>
+
+<p>由于<code class="highlighter-rouge">html</code>语言是忽略空格或是换行的，所以为了代码看起来更加的直观，我们往往会这样对代码进行进一步的格式化：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">                    <span class="c">&lt;!-- 1.1.1.1 --&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: left; border-width: 10px;border-style: solid;border-color: #060504"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"1.png"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>再格式化：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">                    <span class="c">&lt;!-- 1.1.1.1 --&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: left;
+                                border-width: 10px; 
+                                border-style: solid; 
+                                border-color: #060504"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"1.png"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>增加的3条语句，为照片的上下左右各增加了一个10像素的边框，边框的线型是实线，边框的颜色是<code class="highlighter-rouge">#060504</code>。</p>
+<hr />
+
+<p><code class="highlighter-rouge">#060504</code>中的<code class="highlighter-rouge">#</code>为固有写法，其后面的值用16进制(0123456789abcdef)表示。范围由<code class="highlighter-rouge">#000000</code>至<code class="highlighter-rouge">#ffffff</code>。其中，前两位代表红色，中间两位代表绿色，最后两位代码蓝色。所对应的数值起高，代表这个颜色越浓。</p>
+
+<blockquote>
+  <p>参考：<a href="https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8E%9F%E8%89%B2%E5%85%89%E6%A8%A1%E5%BC%8F">三原色光模式</a></p>
+</blockquote>
+
+<hr />
+
+<p>效果：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/35.png" alt="/WebCourse2017/assets/image/chapter3/35.png" /></p>
+
+<h1 id="设置所有的图片">设置所有的图片</h1>
+<p>我们用同样的方法，来设置其它图片。</p>
+
+<p>此时，由于修改的图片过多，我们就需要使用至<code class="highlighter-rouge">sublime</code>的多点编辑功能了，我们选中一个有通用性的代码，然后按<code class="highlighter-rouge">ctrl+d</code>进行重复选择，最后进行统一编辑。</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/1.gif" alt="/WebCourse2017/assets/image/chapter3/1.gif" /></p>
+
+<p>效果：</p>
+
+<p><img src="/WebCourse2017/assets/image/chapter3/36.png" alt="/WebCourse2017/assets/image/chapter3/36.png" /></p>
+
+
+  </div>
+
+  
+</article>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages </a> and <a href="http://jekyllrb.com/">Jekyll</a>. Powered By: <a href="http://www.mengyunzhi.com">梦云智</a>. </span>
+      </footer>
+    </section>
+
+  </body>
+</html>

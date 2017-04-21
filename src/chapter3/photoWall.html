@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    
+    <!-- 以下是CSS代码，放到<style>标签中 -->
+    <style type="text/css">
+        /* 这里是样式表中的注释 */
+        /* 左浮动 */
+        .left {
+            float: left;
+        }
+        
+        /* 清除浮动影响 */
+        .clear {
+            clear: left;
+        }
+        
+        /* 为照片设置统一border */
+        .photoBorder {
+            border-width: 10px;
+            border-style: solid;;
+            border-color: #060504;
+        }
+
+        .paddingStyle1 {
+            padding:14px 20px;
+            height: 78px;
+            width: 50px;
+        }
+
+        .paddingStyle2 {
+            padding:27px 20px;
+        }
+
+        .paddingStyle3 {
+            padding:32px 42px;
+        }
+
+        .paddingStyle4 {
+            height: 107px;
+        }
+
+        .img {
+            margin: 5px;
+            box-shadow: 4px 4px 10px
+        }
+
+        .main {
+                background: -webkit-linear-gradient(left top, #F6F6F6 , #9F4C21); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(bottom right, #F6F6F6, #9F4C21); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(bottom right, #F6F6F6, #9F4C21); /* Firefox 3.6 - 15 */
+                background: linear-gradient(to bottom right, #F6F6F6 , #9F4C21); /* 标准的语法 */
+                width: 606px;
+                height: 410px;
+                margin: 0 auto;
+                padding: 15px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 画一个大框 -->
+    <div class="main">
+        <!-- 行1 -->
+        <div>
+            <!-- 1.1 -->
+            <div class="left">
+                <!-- 1.1.1 -->
+                <div>
+                    <!-- 1.1.1.1 -->
+                    <div class="left photoBorder paddingStyle1 img"><img src="1.png" /></div>
+                    <!-- 1.1.1.2 -->
+                    <div class="left photoBorder paddingStyle1 img"><img src="2.png" /></div>
+                    <!-- clear -->
+                    <div class="clear"></div>
+                </div>
+                <!-- 1.1.2 -->
+                <div class="photoBorder paddingStyle2 img"><img src="3.png" /></div>
+            </div>
+            <!-- 1.2 -->
+            <div class="left">
+                <!-- 1.2.1 -->
+                <div class="photoBorder paddingStyle1 img"><img src="4.png" /></div>
+                <!-- 1.2.2 -->
+                <div class="photoBorder paddingStyle1 img" style="margin-top:10px"><img src="5.png" /></div>
+            </div>
+            <!-- 1.3 -->
+            <div class="left photoBorder paddingStyle3 img"><img src="6.png" /></div>
+            <!-- clear -->
+            <div class="clear"></div>
+        </div>
+        <!-- 行2 -->
+        <div>
+            <!-- 2.1 -->
+            <div class="left photoBorder paddingStyle1 img"><img src="7.png" /></div>
+            <!-- 2.2 -->
+            <div class="left photoBorder paddingStyle4 img"><img src="8.png" /></div>
+            <!-- 2.3 -->
+            <div class="left photoBorder paddingStyle1 img"><img src="9.png" /></div>
+            <!-- 2.4 -->
+            <div class="left photoBorder paddingStyle1 img"><img src="10.png" /></div>
+            <!-- clear -->
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+
+</html>
