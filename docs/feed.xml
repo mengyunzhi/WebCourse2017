@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-04-21T14:52:20+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-04-21T14:54:27+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
 </subtitle><entry><title type="html">第十一节：微调</title><link href="http://localhost:4000/WebCourse2017/chapter3/11-fine-tune/" rel="alternate" type="text/html" title="第十一节：微调" /><published>2017-04-20T16:47:02+08:00</published><updated>2017-04-20T16:47:02+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter3/11-fine-tune</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter3/11-fine-tune/">&lt;p&gt;相信大家都想得到一个满意的照片墙，而我们上节做的距离满意显然还有一定的差距。&lt;/p&gt;
 
 &lt;p&gt;细节差距主要体现在：&lt;/p&gt;
@@ -128,6 +128,10 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;        &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;main样式当然需要及其它样式一样，增加到&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;style type=&quot;text/css&quot;&amp;gt;&lt;/code&gt;与&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/style&amp;gt;&lt;/code&gt;标签之间了.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;为这个样式设置样式值：&lt;/p&gt;
 
