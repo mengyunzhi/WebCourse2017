@@ -1,5 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-05-12T10:11:55+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
-</subtitle><entry><title type="html">第五节：设置安全组</title><link href="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/" rel="alternate" type="text/html" title="第五节：设置安全组" /><published>2017-05-12T09:14:19+08:00</published><updated>2017-05-12T09:14:19+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/">&lt;p&gt;腾讯云默认关闭了80端口，我们提供服务的为80端口，需要手动设置将其打开。
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-05-17T10:01:33+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
+</subtitle><entry><title type="html">第一节：使用windows默认的FTP进行文件的上传</title><link href="http://localhost:4000/WebCourse2017/chapter5/use-ftp/" rel="alternate" type="text/html" title="第一节：使用windows默认的FTP进行文件的上传" /><published>2017-05-17T08:23:06+08:00</published><updated>2017-05-17T08:23:06+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter5/use-ftp</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter5/use-ftp/">&lt;p&gt;windows默认带有ftp工具，我们可以这样来使用。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;打开我的电脑或IE浏览器。&lt;/li&gt;
+  &lt;li&gt;在地址栏中，输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;ftp://2017:2017@www.mengyunzhi.cn&lt;/code&gt;。注意，一定要输入全部的内容。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其中&lt;code class=&quot;highlighter-rouge&quot;&gt;ftp&lt;/code&gt;代表，我们要访问这台服务器的文件传输协议为文件传输协议;&lt;code class=&quot;highlighter-rouge&quot;&gt;2017:2017&lt;/code&gt;，第一个&lt;code class=&quot;highlighter-rouge&quot;&gt;2017&lt;/code&gt;是用户名，第二个&lt;code class=&quot;highlighter-rouge&quot;&gt;2017&lt;/code&gt;是密码; &lt;code class=&quot;highlighter-rouge&quot;&gt;www.mengyunzhi.cn&lt;/code&gt;，服务器地址。&lt;/p&gt;
+
+&lt;p&gt;输入后按回车，或点击 转到 按钮, 你将看到如下文件夹。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter5/1.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter5/1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt;为系统文件夹。&lt;/p&gt;
+
+&lt;h2 id=&quot;照片墙作业提交到-photowall-文件夹中&quot;&gt;照片墙作业提交到 photowall 文件夹中。&lt;/h2&gt;
+
+&lt;p&gt;打开&lt;code class=&quot;highlighter-rouge&quot;&gt;photowall&lt;/code&gt;文件夹。再找到自己本地需要提交的作业文件夹，将文件夹命名为 学号, 比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;162621&lt;/code&gt;，然后将整个文件夹复制到&lt;code class=&quot;highlighter-rouge&quot;&gt;photowall&lt;/code&gt;文件夹当中。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意，无论是文件夹名称，还是文件名称，都不能包含有任何的中文字符。否则将会出现乱码。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter5/2.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter5/2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作业提交后，应该及时查看提交效果：&lt;/p&gt;
+
+&lt;p&gt;打开浏览器，输入 &lt;a href=&quot;http://www.mengyunzhi.cn:8002&quot;&gt;http://www.mengyunzhi.cn:8002&lt;/a&gt;，然后找到自己的文件夹，或是直接输入&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.mengyunzhi.cn:8002/学号&lt;/code&gt;来查看自己的作品效果。&lt;/p&gt;
+
+&lt;p&gt;作业提交截止时间为5月19号8:30.&lt;/p&gt;
+
+&lt;h2 id=&quot;期末最后的大作业交到-lasthomework-文件夹中&quot;&gt;期末最后的大作业交到 lastHomeWork 文件夹中。&lt;/h2&gt;
+&lt;p&gt;打开&lt;code class=&quot;highlighter-rouge&quot;&gt;lastHomework1&lt;/code&gt;。并用同样的办法，将带有自己学号的大作业提交至文件夹中，并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.mengyunzhi.cn:8003/学号&lt;/code&gt;来查看自己的作业效果。&lt;/p&gt;
+
+&lt;p&gt;大作业提交截止时间为2017年5月29号8:30。&lt;/p&gt;</content><author><name>河北工业大学</name></author><summary type="html">windows默认带有ftp工具，我们可以这样来使用。 打开我的电脑或IE浏览器。 在地址栏中，输入 ftp://2017:2017@www.mengyunzhi.cn。注意，一定要输入全部的内容。</summary></entry><entry><title type="html">第五节：设置安全组</title><link href="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/" rel="alternate" type="text/html" title="第五节：设置安全组" /><published>2017-05-12T09:14:19+08:00</published><updated>2017-05-12T09:14:19+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/">&lt;p&gt;腾讯云默认关闭了80端口，我们提供服务的为80端口，需要手动设置将其打开。
 登录腾讯云，并打开控制台，找到 安全组 – 编辑规则
 &lt;img src=&quot;/WebCourse2017/assets/image/chapter4/16.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter4/16.png&quot; /&gt;&lt;/p&gt;
 
@@ -638,32 +671,4 @@
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/blockquote&gt;</content><author><name>河北工业大学</name></author><summary type="html">前面的章节中，我们学习了设置border与padding，本节中，我们学习盒子模型中最后一个重要的属性margin。</summary></entry><entry><title type="html">第八节：设置内边距padding</title><link href="http://localhost:4000/WebCourse2017/chapter3/8-padding/" rel="alternate" type="text/html" title="第八节：设置内边距padding" /><published>2017-04-20T15:10:48+08:00</published><updated>2017-04-20T15:10:48+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter3/8-padding</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter3/8-padding/">&lt;p&gt;设置完&lt;code class=&quot;highlighter-rouge&quot;&gt;border&lt;/code&gt;后，让我们设置另一个重要属性&lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt;内边框，它指相片距离相框的距离是多少。&lt;/p&gt;
-
-&lt;h2 id=&quot;设置padding&quot;&gt;设置padding&lt;/h2&gt;
-&lt;p&gt;我们仍然以第一相片为例，进行内边距的设置。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter3/1.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter3/1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;参考上图，我们给出适当的值，比如上下各8px,左右各12px。&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;                    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 1.1.1.1 --&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left photoBorder&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;padding:8px 12px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;在确定一些数值时，特别是在初期，我们往往需要进行很多次的调整，这是非常正常的现象。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我们对盒子的属性进行设置时，是由上开始，按顺时针的方向依次设置。即：上、右、下、左。&lt;/p&gt;
-
-&lt;p&gt;如果只设置一个值：&lt;code class=&quot;highlighter-rouge&quot;&gt;8px&lt;/code&gt;，表示示上右下左右均为&lt;code class=&quot;highlighter-rouge&quot;&gt;8px&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;如果设置了两个值：&lt;code class=&quot;highlighter-rouge&quot;&gt;8px 12px&lt;/code&gt;, 表示上、下为8px，右、左为12px。&lt;/p&gt;
-
-&lt;p&gt;如果设置了三个值：&lt;code class=&quot;highlighter-rouge&quot;&gt;8px 12px 16px&lt;/code&gt;，表示上8px, 右、左12px, 下16px。&lt;/p&gt;
-
-&lt;p&gt;如果设置了四个值，则按上右下左的顺序依次进行对应。&lt;/p&gt;
-
-&lt;p&gt;效果：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/WebCourse2017/assets/image/chapter3/37.png&quot; alt=&quot;/WebCourse2017/assets/image/chapter3/37.png&quot; /&gt;&lt;/p&gt;</content><author><name>河北工业大学</name></author><summary type="html">设置完border后，让我们设置另一个重要属性padding内边框，它指相片距离相框的距离是多少。</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>河北工业大学</name></author><summary type="html">前面的章节中，我们学习了设置border与padding，本节中，我们学习盒子模型中最后一个重要的属性margin。</summary></entry></feed>
