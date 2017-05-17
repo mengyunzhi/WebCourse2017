@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-05-17T10:01:33+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/WebCourse2017/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/WebCourse2017/" rel="alternate" type="text/html" /><updated>2017-05-17T10:08:58+08:00</updated><id>http://localhost:4000/WebCourse2017/</id><title type="html">商业网站开发入门上机指导</title><subtitle>技术支持：河北工业大学梦云智软件开发团队
 </subtitle><entry><title type="html">第一节：使用windows默认的FTP进行文件的上传</title><link href="http://localhost:4000/WebCourse2017/chapter5/use-ftp/" rel="alternate" type="text/html" title="第一节：使用windows默认的FTP进行文件的上传" /><published>2017-05-17T08:23:06+08:00</published><updated>2017-05-17T08:23:06+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter5/use-ftp</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter5/use-ftp/">&lt;p&gt;windows默认带有ftp工具，我们可以这样来使用。&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;打开我的电脑或IE浏览器。&lt;/li&gt;
@@ -30,6 +30,8 @@
 &lt;p&gt;作业提交截止时间为5月19号8:30.&lt;/p&gt;
 
 &lt;h2 id=&quot;期末最后的大作业交到-lasthomework-文件夹中&quot;&gt;期末最后的大作业交到 lastHomeWork 文件夹中。&lt;/h2&gt;
+&lt;p&gt;要求： 使用所学知识，结合课外补充知识，制作心目中的带有logo menu slider aboutus copyright的简单商业网站。&lt;/p&gt;
+
 &lt;p&gt;打开&lt;code class=&quot;highlighter-rouge&quot;&gt;lastHomework1&lt;/code&gt;。并用同样的办法，将带有自己学号的大作业提交至文件夹中，并使用&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.mengyunzhi.cn:8003/学号&lt;/code&gt;来查看自己的作业效果。&lt;/p&gt;
 
 &lt;p&gt;大作业提交截止时间为2017年5月29号8:30。&lt;/p&gt;</content><author><name>河北工业大学</name></author><summary type="html">windows默认带有ftp工具，我们可以这样来使用。 打开我的电脑或IE浏览器。 在地址栏中，输入 ftp://2017:2017@www.mengyunzhi.cn。注意，一定要输入全部的内容。</summary></entry><entry><title type="html">第五节：设置安全组</title><link href="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/" rel="alternate" type="text/html" title="第五节：设置安全组" /><published>2017-05-12T09:14:19+08:00</published><updated>2017-05-12T09:14:19+08:00</updated><id>http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group</id><content type="html" xml:base="http://localhost:4000/WebCourse2017/chapter4/5-config-ser-group/">&lt;p&gt;腾讯云默认关闭了80端口，我们提供服务的为80端口，需要手动设置将其打开。
